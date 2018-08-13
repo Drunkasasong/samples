@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>@yield('title', 'Samples') - Laravel 新手入门</title>
-    <link rel="stylesheet" type="text/css" href="/css/app.css">
+    <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
     @include('layout._header')
@@ -14,5 +14,7 @@
             @include('layout._footer')
         </div>
     </div>
+
+    <script src="/js/app.js"></script>
 </body>
 </html>
