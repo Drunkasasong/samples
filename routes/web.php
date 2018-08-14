@@ -22,7 +22,9 @@ Route::get('about', 'StaticPagesController@about')->name('about');
 Route::get('signup', 'UsersController@create')->name('signup');
 // 显示用户信息
 Route::resource('users', 'UsersController');
-//会话
+// 会话
 Route::get('login', 'SessionsController@create')->name('login');
 Route::post('login', 'SessionsController@store')->name('login');
 Route::delete('logout', 'SessionsController@destroy')->name('logout');
+// 更新用户
+Route::get('/users/{user}/edit', 'UsersController@edit')->name('users.edit');
