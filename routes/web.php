@@ -28,3 +28,5 @@ Route::post('login', 'SessionsController@store')->name('login');
 Route::delete('logout', 'SessionsController@destroy')->name('logout');
 // 更新用户
 Route::get('/users/{user}/edit', 'UsersController@edit')->name('users.edit');
+// 账户激活
+Route::get('sigup/confirm/{token}', 'UsersController@confirmEmail')->name('confirm_email');
